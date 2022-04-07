@@ -143,6 +143,17 @@ display: inline;
     text-decoration: none;
     padding: 14px 50px;
     font-size: 1.35rem;
-    position: fixed;
+    position:absolute;
 
+}
+
+
+.button:hover {
+    color: #F5FFFA;
+    border-color: #b2a8a8;
+}
+
+nav ul li {
+    font-size: 10px;
+    color: black;
 }
