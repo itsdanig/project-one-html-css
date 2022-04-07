@@ -8,7 +8,7 @@
 }
 
 header {
-    text-align:left;
+    text-align:center;
     font-family:Raleway, Work Sans;
     font-weight: 300;
     text-transform: uppercase;
@@ -17,11 +17,11 @@ header {
 }
 
 body {
-    background-color:#F5FFFA;
+    
     font-family: Raleway, Work Sans;
     font-weight: 400;
     letter-spacing: 0.5px;
-
+    
 }
 
 .menu {
@@ -40,6 +40,7 @@ body {
     padding:10px;
     margin:10px;
     width:100px;
+   
 }
 
 nav {
@@ -65,12 +66,83 @@ nav  ul {
 nav ul li {
     list-style: none;
     float: left;
+    position: relative;
+    text-align: center;
 }
 
 nav ul li a {
     color: rgb(26, 19, 19);
     font-family: Work Sans, Raleway;
-    font-size: 26px;
-    padding: 25px 15px;
+    font-size: 16px;
+    padding: 23px 13px;
     display: block;
+    text-decoration: none;
+}
+nav ul li ul {
+    display: none;
+    background-color:#b2a8a8;
+    position: absolute;
+    padding: 20px; 
+    border-radius: 4px;
+    
+}
+nav ul li:hover ul {
+    display: block;
+
+}
+
+
+
+    nav ul li ul li  {
+        border-radius: 4px;
+        width: 100px;
+    }
+ 
+
+nav ul li ul li a {
+    padding: 10px 13px; 
+}
+nav ul li ul li a:hover  {
+  background-color: #F5FFFA;
+}
+ 
+h1 {
+    text-align: center;
+}
+
+footer {
+text-align: center;
+background-color: #484848;
+color: #484848;
+padding: 20px;
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 60px;
+background: fixed;    
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials i {
+    color: #484848;
+    padding: 7%;
+    margin: 2%;
+    font-size: 180%;
+}
+
+.socials > li {
+display: inline;
+}
+
+.button {
+    display: inline-block;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 14px 50px;
+    font-size: 1.35rem;
+    position: fixed;
+
 }
